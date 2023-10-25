@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ZythonHUB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- LOGO CREATED BY J4CN CANT BE USED FOR YOUR/THEIR PERSONAL THIG -->
+ <link rel = "icon" href = 
+"https://media-private.canva.com/9Ih2g/MAFq2b9Ih2g/1/tl.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230807%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230807T012023Z&X-Amz-Expires=44046&X-Amz-Signature=814c2b44a44df39b1504289d1b7a81fc207a237f6da11b64dae9bb53208681d7&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2007%20Aug%202023%2013%3A34%3A29%20GMT" 
+        type = "image/x-icon">
+          
+        <!-- Font Families -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    </head>
+<body class="w3-sand">
+
+    <!-- Navbar Section -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-light-gray">
+            <div class="w3-col s3">
+                <a href="./cloud.html" class="w3-button w3-block">
+                    <img src="https://media-private.canva.com/43AsU/MAFq2e43AsU/1/tl.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T223531Z&X-Amz-Expires=56730&X-Amz-Signature=b3601b125668dab8e8706aef0738f63d2a6459ce79a2085f11da9e3793137e24&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2007%20Aug%202023%2014%3A21%3A01%20GMT"
+                    class="w3-circle w3-circle"
+                            style="width: 20%; height: 10%;"></img>
+                </a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#home" class="w3-button w3-b w3-block">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#hour-section" class="w3-button w3-b w3-block">Collaboration </a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#download" class="w3-button w3-b w3-block">Links and download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="header w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO3RFWHRDb21tZW50AHhyOmQ6REFGcU42aXZTVnM6NixqOjQ5NzY4NzU5NDc2Njc5NDczNjQsdDoyMzA4MDExNCDSh0cAAATyaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9J2Fkb2JlOm5zOm1ldGEvJz4KICAgICAgICA8cmRmOlJERiB4bWxuczpyZGY9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMnPgoKICAgICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICAgICAgIHhtbG5zOmRjPSdodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyc+CiAgICAgICAgPGRjOnRpdGxlPgogICAgICAgIDxyZGY6QWx0PgogICAgICAgIDxyZGY6bGkgeG1sOmxhbmc9J3gtZGVmYXVsdCc+RnV0dXJpc3RpYyBNb2Rlcm4gQmxhY2sgYW5kIFdoaXRlIExvZ28gLSAxPC9yZGY6bGk+CiAgICAgICAgPC9yZGY6QWx0PgogICAgICAgIDwvZGM6dGl0bGU+CiAgICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CgogICAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgICAgICAgeG1sbnM6QXR0cmliPSdodHRwOi8vbnMuYXR0cmlidXRpb24uY29tL2Fkcy8xLjAvJz4KICAgICAgICA8QXR0cmliOkFkcz4KICAgICAgICA8cmRmOlNlcT4KICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9J1Jlc291cmNlJz4KICAgICAgICA8QXR0cmliOkNyZWF0ZWQ+MjAyMy0wOC0wMTwvQXR0cmliOkNyZWF0ZWQ+CiAgICAgICAgPEF0dHJpYjpFeHRJZD5mMmQyOWJlNy0xYTI0LTRmZWMtOThmNC0zNjMyZTEzNTA1MWU8L0F0dHJpYjpFeHRJZD4KICAgICAgICA8QXR0cmliOkZiSWQ+NTI1MjY1OTE0MTc5NTgwPC9BdHRyaWI6RmJJZD4KICAgICAgICA8QXR0cmliOlRvdWNoVHlwZT4yPC9BdHRyaWI6VG91Y2hUeXBlPgogICAgICAgIDwvcmRmOmxpPgogICAgICAgIDwvcmRmOlNlcT4KICAgICAgICA8L0F0dHJpYjpBZHM+CiAgICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CgogICAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgICAgICAgeG1sbnM6cGRmPSdodHRwOi8vbnMuYWRvYmUuY29tL3BkZi8xLjMvJz4KICAgICAgICA8cGRmOkF1dGhvcj5KYWNKYWM8L3BkZjpBdXRob3I+CiAgICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CgogICAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgICAgICAgeG1sbnM6eG1wPSdodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvJz4KICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkNhbnZhPC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgICAgICAgPC9yZGY6UkRGPgogICAgICAgIDwveDp4bXBtZXRhPoXf3HUAAB2JSURBVHic7NXBDcAgEMCwo/vvDEPwqIjsCfLLmpk9AMDTvr8DAIB7hg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAEHAAD//+zdeXhNd+LH8Y+IiJGmtYWikhYdjX15prYg9rUd2oS0mNJOqdRSxD4/sVOK1lJbxNJHiJqSaeyjgurQjKk2pVQjljRPhaigYiTx+8PjjltElm/uTY736697bu/9nG/x5JPzPed8D4UOAIAFUOgAAFgAhQ4AgAVQ6AAAWACFDgCABVDoAABYAIUOAIAFUOgAAFgAhQ4AgAVQ6AAAWACFDgCABVDoAABYAIUOAIAFUOgAAFgAhQ4AgAVQ6AAAWACFDgCABVDoAABYAIUOAIAFUOgAAFgAhQ4AgAVQ6AAAWACFDgCABVDoAABYAIUOAIAFUOgAAFgAhQ4AgAVQ6AAAWACFDgCABVDoAABYAIUOAIAFUOgAAFgAhQ4AgAW4OnsAeDy5urrKxeXx/H0yMzNT6enpzh4GAIspIum2sweBx88///lPtW7d2tnDcIqlS5dq4MCBzh4GAIt5PA+R4FTu7u568cUXnT0Mp9m3b5+zhwDAgphyh8P5+/urZMmSeco4d+6cTp8+rYSEBJ0+fVqnTp3ShQsXdO3aNaWmpurq1atKTU3VrVu3cr2PypUr64svvlCFChXyNNZ7ZWRkaPfu3cbyAOAuCh0O17Zt2xx/JzU1VTt37tTWrVu1Z88enTlzJh9G9j/u7u4KDw83WuaSFB4ergsXLhjNBACJQocT+Pn5Zfuz3333nZYsWaLw8HDduHEjH0dlb9GiRWrcuLHRzIMHDyo4ONhoJgDcxUVxcKjSpUvrl19+katr1r9Lnj59WqGhoVqzZo2DRvY/gwcP1kcffWQ08/z582rcuLESExON5gLAXRyhw6E6dOiQZZlnZGRo8eLFGj16tEOPyO9q3bq1Zs+ebTTzxo0bCgoKoswB5CsKHQ6V1a1qFy9eVN++fbVt2zYHjuh/fHx89Mknn6h48eJGc4cOHaoDBw4YzQSA36PQ4VDNmzd/4PsnT55U9+7ddezYMQeP6A53d3dFRkbq6aefNpq7cOFCLV++3GgmADwI59DhMD4+PoqPj1eRIkXs3j9+/Lg6dOigc+fOOWlk0qpVq/SXv/zFaGZMTIzatm3LqnAAHIIjdDhMx44d7yvz+Ph4tWvXzqnnl9977z3jZZ6QkKCgoCDKHIDDsFIcHMbf399uOyUlRT169HBqmbdr104zZ840mnn9+nX16tVLSUlJRnMBICsUOhymWbNmtteZmZl66623dPToUaeNp2rVqlq7dq3c3NyMZd6+fVvBwcE6dOiQsUwAyA4KHQ5Rr149VapUyba9fPlyffbZZ04bT4kSJbRhwwaVL1/eaO68efO0evVqo5kAkB0UOhyiQ4cOttcJCQkaMWKEE0dz5xeKhg0bGs3cvXu3QkJCjGYCQHZR6HCIFi1a2F7/3//9n65fv+60sYSEhOj11183mnnq1Cm99tpryszMNJoLANnFbWvId66urkpOTtZTTz2lf/3rX2rSpInTxtKxY0dFRUWpWLFixjJTU1Pl7++vI0eOGMsEgJziCB35zs/PT0899ZQkGV9WNSeqVaumNWvWGC3zzMxMDRw4kDIH4HQUOvLd3celfv/99/r73//ulDGULFlSGzduVLly5Yzmzpo1SxEREUYzASA3KHTku7vnz5cuXeq0MYSFhalevXpGM6OjozVu3DijmQCQW5xDR77y8PBQcnKyMjMzVblyZV2+fNnhYxg7dqymT59uNPPEiRNq0qSJU/5/AOBBOEJHvmrXrp3c3d0VHR3tlPLr0qWLJk+ebDTz119/VWBgIGUOoEDhCB35qnr16vL19VVcXJx++uknh+67Ro0a2r9/v8qWLWssMyMjQz179tSmTZuMZQKACRQ6LMnDw0MHDx5U7dq1jeZOmjRJoaGhRjMBwAQKHZa0ceNGvfrqq0YzN2/erO7duxvNBABTOIcOy/nb3/5mvMzj4uKMP2IVBYuLi4u8vLz05JNPOnsoQK5whA5Lefnll7Vp0yYVLVrUWOalS5fk5+en48ePP/KzDRo00NChQ23b8fHxmjRpUq72O3HiRD333HO27dmzZysuLu6hn3d3d8+XWwOnTZumkydPZuuz8+fPV6lSpSRJ3377rT744INc7zc8PFwuLneOOfbt26ewsLBcZz1I8+bNFRAQoIYNG6pGjRoqXbq0ihQpIklKT0/X+fPndezYMe3du1cbNmzQ2bNnje7/3j+rS5cuafjw4bnOevPNN223h2ZmZqpfv35GxojChUKHZfj6+mr//v0qXbq0scz09HR1795dn3/+ebY+7+rqqmPHjql69eqS7vxw/dOf/qR///vfOdpvo0aNdOjQIVuhHTt2TLVr185yrXhPT09duXIlR/vJjpYtW2rfvn3Z+mxiYqIqVqwoSdq+fbs6deqU6/2mp6fbfjELDw9X//79c511r169emnMmDGqW7dujsayadMmTZkyRd9//72Rcdz7ZyVJI0eOzPUvQCtXrrSVeEZGhlxdXY2MEYULU+6wBE9PT0VGRhotc+nOg2SyW+bSnR/8M2bMsG27uLho/PjxOd7v+PHjbWUuSVOnTuXBL3lUqVIlff7554qIiMhRmUt3flHr2bOnYmNj820xoYkTJ6pGjRr5ko3HA7/GwRJWr16tmjVrGs2MjIy0K+fsCg8P17Bhw1SnTh1J0ksvvaT69evrP//5T7a+X79+fXXr1s22HRsbm63lZX/77Te98847WX6mSpUqGjt2rG17zZo1+uqrr7L8zo8//vjIfRd0derUUVRUlLy9ve3eT0xMVHR0tA4dOqQTJ04oJSVFxYsXl5eXl+rUqaPWrVvL399f7u7uku6c1pg2bZrq1q2rPn366L///a+xMT7xxBNasmSJWrVqZSwTjxcKHYVeaGio/vznPxvN/Oabb/I0xTtlyhRt3LhRklS0aFGNGzdOAQEB2fru+PHj7a4ByO45+PT0dC1ZsiTLz7Ro0cKu0L/++utHfqewq169unbs2KEKFSrY3ktKStKkSZMUFham9PT0B35v586dmjNnjry9vTVhwgT169fP9vcSGBgoV1dXvfLKK0bH2rJlSw0fPlxz5841movHA1PuKNR69OihCRMmGM1MTk5WQEBAnp7Z/umnn9od+Xbv3j1b07x169a1++Vk//79OZryh70SJUpo06ZNdmUeExOj+vXra+nSpQ8t83udOXNGf/3rX/Xyyy/bXaPQo0ePfFmT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" </img>
+        </div>
+    </header>
+
+    <!-- Our Barbers Section -->
+    <div class="w3-sand w3-large" id="information">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Collaboration</span></h5>
+        <div class="w3-row-padding w3-padding-large">
+            <div class="w3-third w3-container w3-margin-bottom w3-hover-grayscale">
+                <div class="w3-container w3-center w3-black">
+                    <div style=" height:100%; max-width: 170px; margin: 0 auto; padding: 2rem;">
+                        <img src="./j4cn.png" class="w3-circle w3-circle" alt="j4cn"
+                            style="width: 100%; height: 100%;">
+                    </div>
+                    <p><b>J4cn</b>(owner)</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom w3-hover-grayscale">
+                <div class="w3-container w3-center w3-black">
+                    <div class="" style=" height: 100%; max-width: 170px; margin: 0 auto; padding: 2rem;">
+                        <img src="https://media-private.canva.com/T312U/MAFq2TT312U/1/tl.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T142120Z&X-Amz-Expires=85122&X-Amz-Signature=aa07bfb48d60f536d9021e24950af72c1c642119dff2da2e9175382cf3f9f19c&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2007%20Aug%202023%2014%3A00%3A02%20GMT" class="w3-circle" alt="J44cn" style="width: 100%; height: 100%;">
+                    </div>
+                    <p><b>zYcortax</b></p>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom w3-hover-grayscale">
+                <div class="w3-container w3-center w3-black">
+                    <div class="" style=" height: 100%; max-width: 170px; margin: 0 auto; padding: 2rem;">
+                          <img src="https://yt3.googleusercontent.com/pAD2NqHD2l_M8KORcm0OoS0J8kIGIeBe7U8cCmC-Erk7eE_BA9Gf8BLYrvqijk3NZHAfA8SB5w=s176-c-k-c0x00ffffff-no-rj" class="w3-circle" alt="J44cn" style="width: 100%; height: 100%;">
+                    <p><b>BackupCookie.pro</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <h5 class="w3-center w3-padding-48" id="hour-section"><span class="w3-tag w3-wide"></span></h5>
+    <div class="w3-center">
+        
+        <div class="w3-third w3-center w3-container w3-margin-bottom">
+                <div class="w3-container w3-black" style="height: 180px;">
+                    <p><b>ZythonHUB</b></p>
+                    <p>Parent extension for all of our feature</p>
+                </div>
+            </div>
+            <div class="w3-third w3-center w3-container w3-margin-bottom">
+                <div class="w3-container w3-black" style="height: 180px;">
+                    <p><b>ZythonOfflineviber</b></p>
+                    <p>can add upto 25 muusic</p>
+                </div>
+            </div>
+            <div class="w3-third w3-center w3-container">
+                <div class=" w3-container w3-black" style=" height: 180px;">
+                    <p><b>Texture packs hub</b></p>
+                    <p>where you can download our pack ez :)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div class="call-to-action w3-center w3-padding-top-64">
+        <a href="#download" style="font-size:30px; text-align: center" class="w3-white w3-text-dark w3-btn w3-border">Links and Download</a>
+    </div>
+
+    <!-- Pricing Section-->
+    <div class="w3-container" id="price-section">
+        <div class="w3-content w3-center" style="max-width:700px; font-weight: 600;">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Sub to @Jac_u</span></h5>
+            <div class="w3-panel w3-black">
+                <h4>ZythonHUB BETA</h4>
+            </div>
+            <div class="w3-panel w3-black">
+                <h4>Phycore3.1</h4>
+            </div>
+            <div class="w3-panel w3-black">
+                <a href="https://youtu.be/asDQMMhRabQ">FaintPVP pack</a>
+            </div>
+            <div class="w3-panel w3-black">
+                <a href="https://youtube.com/@Jac_u">J4cn YT</a>
+            </div>
+            <div class="w3-panel w3-black">
+                <a href="https://youtube.com/@BackupCookie686">BackupCookie YT</a>
+            </div>
+            <div class="w3-panel w3-black">
+                <a href="./cloud.html">ZythonLaucher</a>
+            </div>
+           
+        </div>
+    </div>
+    </div>
+    <!-- End page content -->
+<img src="https://video-private-assets.canva.com/VAFq2Y55sRU/v/3aa8247333.mp4?exp=1691406540000&cf-ck=m1ssSD_scBEUVawGdwpvPdpnyvclo2KKmDTgaoW6yAI&cf-sig=B_gRBcxQFFTvNEmJY_jkZ_PlaM7qxcpdOwMlHSqbU14&cf-sig-kid=CO7cCjZ_YiI=&sig=TQ5O_rJ0ix0Ep8NNiKb-V1GQVOTil1IiYwOEejmH9yY&sig-kid=GzFgFdhXD-Q="></img>
+   <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+   <footer class="w3-center w3-padding-48 w3-large">
+    
+    <p class="w3-small">Made for ZythonHUB</p>
+    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom w3-border" href="https://youtube.com/@Jac_u" target="_blank">by <strong>J4cn</strong></a>
+
+    <!-- End footer. -->
+    </footer>
+</body>
+
+</html>
